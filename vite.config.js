@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   build: {
-    minify: 'esbuild', // NIEMALS 'terser' — verursacht Build-Fehler auf Netlify
+    minify: 'esbuild', // NIEMALS 'terser'
     outDir: 'dist',
     rollupOptions: {
       input: {
@@ -10,5 +10,5 @@ export default defineConfig({
       }
     }
   },
-  publicDir: 'public'
+  publicDir: false  // Bilder liegen im Root, werden von Vite direkt kopiert
 });
