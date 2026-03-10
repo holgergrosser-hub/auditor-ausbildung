@@ -1,0 +1,11 @@
+{
+  "name": "qmguru-auditor-ausbildung",
+  "version": "1.0.0",
+  "description": "Fachdiskussion Auditorenausbildung – QM-Guru.de",
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
