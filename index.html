@@ -345,12 +345,11 @@
     .toc ol {
       list-style: none;
       counter-reset: toc;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px 32px;
-      margin-top: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 8px;
     }
-    @media (max-width: 600px) { .toc ol { grid-template-columns: 1fr; } }
     .toc li { counter-increment: toc; }
     .toc li a {
       color: var(--blue-dark);
@@ -358,7 +357,7 @@
       font-size: 15px;
       display: flex;
       align-items: baseline;
-      gap: 8px;
+      gap: 10px;
       transition: color 0.2s;
       line-height: 1.4;
     }
@@ -1011,7 +1010,6 @@
 <!-- ═══ TABLE OF CONTENTS ═══ -->
 <div class="toc-wrapper">
   <nav class="toc" aria-label="Inhalt">
-    <h3>Inhalt dieses Beitrags</h3>
     <ol>
       <li><a href="#erwartungen">Was er erwartet hatte</a></li>
       <li><a href="#monolog">Ein Kurs im Monolog-Modus</a></li>
