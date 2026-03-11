@@ -10,5 +10,6 @@ export default defineConfig({
       }
     }
   },
-  publicDir: false  // Bilder liegen im Root, werden von Vite direkt kopiert
+  // Static files from /public get copied to /dist (e.g. sitemap.xml, robots.txt, _redirects)
+  publicDir: 'public'
 });
